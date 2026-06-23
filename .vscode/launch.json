@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Doodlejump",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/doodlejump",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "LIBGL_ALWAYS_SOFTWARE",
+                    "value": "1"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build Doodlejump",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
