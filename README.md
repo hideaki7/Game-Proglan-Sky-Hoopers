@@ -1,71 +1,71 @@
 # Sky Hoopers 🚀
 
-Sky Hoopers is a modern, dynamic 2D platformer inspired by the classic *Doodle Jump*. Built entirely with **C++** and the **SFML** library, this game introduces unique mechanics such as multi-directional gravity, interactive portals, and powerful character buffs to take the endless jumping experience to the next level.
+Sky Hoopers adalah game platformer 2D dinamis dan modern yang terinspirasi dari game klasik *Doodle Jump*. Dibuat sepenuhnya menggunakan **C++** dan library **SFML**, game ini memperkenalkan mekanik unik seperti perubahan arah gravitasi, portal interaktif, dan berbagai *buff* karakter untuk memberikan pengalaman melompat tanpa batas yang lebih seru.
 
-## ✨ Features
+## ✨ Fitur Utama
 
-- **Two-Way Responsive Scrolling:** The camera and gameplay dynamically adjust, allowing for both vertical and horizontal traversal depending on the current gravity state.
-- **Portals:** Special portals that transport the player and alter the direction of gravity and scrolling.
-- **Power-ups & Buffs:**
-  - 🚀 **Rocket:** Propels the player forward/upward at high speed, making them temporarily invincible.
-  - 🛡️ **Shield:** Protects the player from hazards and prevents falling.
-  - ⭐ **2x Multiplier:** Doubles the score gained from moving and jumping.
-- **Dynamic UI System:** Features an interactive Main Menu, Guide screens, and "Click to Restart" logic.
-- **Rich Audio:** Includes persistent Background Music (BGM) and responsive Sound Effects (SFX) for power-ups, portals, and game over states.
+- **Two-Way Responsive Scrolling:** Kamera dan gameplay dapat menyesuaikan secara dinamis, memungkinkan pergerakan secara vertikal maupun horizontal tergantung pada arah gravitasi saat ini.
+- **Portal:** Portal spesial yang akan memindahkan pemain sekaligus mengubah arah gravitasi dan pergerakan layar.
+- **Power-up & Buff:**
+  - 🚀 **Rocket:** Mendorong pemain meluncur ke atas/depan dengan kecepatan tinggi, membuat pemain kebal sementara waktu.
+  - 🛡️ **Shield:** Melindungi pemain dari bahaya dan mencegah karakter jatuh.
+  - ⭐ **2x Multiplier:** Menggandakan poin skor yang didapatkan dari pergerakan dan lompatan.
+- **Sistem UI Dinamis:** Dilengkapi dengan Main Menu yang interaktif, layar Panduan (Guide), dan sistem "Click to Restart".
+- **Audio yang Menarik:** Dilengkapi dengan Musik Latar (BGM) yang terus berputar dan Efek Suara (SFX) yang responsif untuk setiap power-up, portal, dan saat game over.
 
-## 🛠️ Prerequisites
+## 🛠️ Prasyarat (Prerequisites)
 
-To build and run this game, you will need the following installed on your system (Linux/WSL, Windows, or macOS):
+Untuk melakukan *build* dan menjalankan game ini, kamu perlu menginstal beberapa perangkat lunak berikut (Linux/WSL, Windows, atau macOS):
 
-- A **C++17** compatible compiler (GCC, Clang, or MSVC)
-- **CMake** (version 3.10 or higher)
-- **SFML** (Simple and Fast Multimedia Library - version 2.5 or higher)
+- Compiler yang mendukung **C++17** (GCC, Clang, atau MSVC)
+- **CMake** (versi minimal 3.10)
+- **SFML** (Simple and Fast Multimedia Library - versi minimal 2.5)
 
-*Note for Ubuntu/WSL users:*
+*Catatan khusus untuk pengguna Ubuntu/WSL:*
 ```bash
 sudo apt update
 sudo apt install cmake libsfml-dev build-essential
 ```
 
-## 🚀 How to Build & Run
+## 🚀 Cara Build & Menjalankan Game
 
-This project uses **CMake** for its build system.
+Proyek ini menggunakan **CMake** sebagai sistem *build*-nya.
 
-1. **Clone the repository:**
+1. **Clone repository ini:**
    ```bash
    git clone https://github.com/hideaki7/Game-Proglan-Sky-Hoopers.git
    cd Game-Proglan-Sky-Hoopers
    ```
 
-2. **Create a build directory:**
+2. **Buat direktori build:**
    ```bash
    mkdir build && cd build
    ```
 
-3. **Configure and compile:**
+3. **Lakukan konfigurasi dan kompilasi:**
    ```bash
    cmake ..
    make
    ```
 
-4. **Run the game:**
+4. **Jalankan gamenya:**
    ```bash
    ./doodlejump
    ```
-   *(Note: Ensure your assets folder is located in the correct working directory as expected by the executable).*
+   *(Catatan: Pastikan folder `assets` berada pada direktori kerja yang tepat saat menjalankan game).*
 
-## 🎮 Controls
+## 🎮 Kontrol
 
-- **[A]** / **[D]** or **[Left Arrow]** / **[Right Arrow]**: Move the character Left and Right.
-- **[Mouse Click]**: Interact with menu buttons (Start, Guide, Quit, Restart).
-- Navigate through portals to experience shifting gravity directions!
+- **[A]** / **[D]** atau **[Panah Kiri]** / **[Panah Kanan]**: Menggerakkan karakter ke kiri dan ke kanan.
+- **[Klik Kiri Mouse]**: Berinteraksi dengan tombol menu (Start, Guide, Quit, Restart).
+- Masuk ke dalam portal untuk merasakan sensasi perubahan arah gravitasi!
 
-## 📂 Project Structure
+## 📂 Struktur Proyek
 
-- `src/` - Contains all C++ source code and header files.
-  - `entities/` - Player, Platforms, Portals, and Buff logic.
-  - `state/` - Game state management (Menu, Guide, Gameplay).
-- `assets/` - Game assets including images, fonts, and audio files.
+- `src/` - Berisi semua *source code* C++ dan *header files*.
+  - `entities/` - Logika Pemain (Player), Platform, Portal, dan Buff.
+  - `state/` - Manajemen *state* game (Menu, Panduan, Gameplay).
+- `assets/` - Berbagai aset game termasuk gambar, font, dan file audio.
 
 ---
-*Created as part of an Advanced Programming (Proglan) Project.*
+*Dibuat sebagai bagian dari Proyek Pemrograman Lanjut (Proglan).*
